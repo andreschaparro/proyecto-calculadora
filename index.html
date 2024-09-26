@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div>
+                <input type="text" id="pantalla" readonly>
+            </div>
+            <div>
+                <input type="button" value="1" onclick="agregarALaPantalla('1')">
+            </div>
+            <div>
+                <input type="button" value="2" onclick="agregarALaPantalla('2')">
+            </div>
+            <div>
+                <input type="button" value="3" onclick="agregarALaPantalla('3')">
+            </div>
+            <div>
+                <input type="button" value="+" onclick="agregarALaPantalla('+')">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="agregarALaPantalla('4')">
+            </div>
+            <div>
+                <input type="button" value="5" onclick="agregarALaPantalla('5')">
+            </div>
+            <div>
+                <input type="button" value="6" onclick="agregarALaPantalla('6')">
+            </div>
+            <div>
+                <input type="button" value="-" onclick="agregarALaPantalla('-')">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="agregarALaPantalla('7')">
+            </div>
+            <div>
+                <input type="button" value="8" onclick="agregarALaPantalla('8')">
+            </div>
+            <div>
+                <input type="button" value="9" onclick="agregarALaPantalla('9')">
+            </div>
+            <div>
+                <input type="button" value="*" onclick="agregarALaPantalla('*')">
+            </div>
+            <div>
+                <input type="button" value="0" onclick="agregarALaPantalla('0')">
+            </div>
+            <div>
+                <input type="button" value="." onclick="agregarALaPantalla('.')">
+            </div>
+            <div>
+                <input type="button" value="/" onclick="agregarALaPantalla('/')">
+            </div>
+            <div>
+                <input type="button" value="=" onclick="calcularElResultado()">
+            </div>
+            <div>
+                <input type="button" value="C" onclick="borrarLaPantalla()">
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
