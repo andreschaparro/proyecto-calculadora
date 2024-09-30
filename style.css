@@ -4,25 +4,18 @@ body {
 }
 
 h1 {
-    margin: 0;
-    padding: 10px;
     text-align: center;
-    background-color: black;
-    color: white
-}
-
-header {
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 }
 
 .grid-container {
     display: grid;
     /* La siguiente línea hace que el grid tenga 4 columnas con el mismo ancho */
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 35%;
+    width: 310px;
+    margin: 0 auto;
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
     border-radius: 10px;
     background-color: lightgray;
     /* El box-shadow funciona de forma similar al text-shadow */
@@ -30,37 +23,34 @@ header {
 }
 
 .grid-container>div:first-child {
-    /* Las siguientes líneas producen que la pantalla ocupe las 4 columnas */
+    /* Las siguientes líneas producen que la pantalla ocupe toda la primera fila */
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
 #pantalla {
     width: 100%;
-    /* La siguiente línea evita que la pantalla sobresalga del div */
+    /* La siguiente línea evita que la pantalla ocupe espacio por fuera del div */
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
     font-size: 1.5em;
     text-align: right;
     border-radius: 10px;
-    border: 2px inset;
 }
 
 
 input[type="button"] {
     width: 100%;
-    margin: 0;
-    padding: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: seagreen;
+    color: white;
     border: none;
     border-radius: 10px;
-    background-color: darkslategray;
-    color: white;
-    font-size: 1em;
-    text-align: center;
     cursor: pointer;
 }
 
 input[type="button"]:hover {
-    background-color: lightslategray;
-    color: black;
+    background-color: gray;
 }
