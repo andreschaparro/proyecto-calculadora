@@ -25,7 +25,7 @@ h1 {
 .grid-container>div:first-child {
     /* Las siguientes líneas producen que la pantalla ocupe toda la primera fila */
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: -1;
 }
 
 #pantalla {
